@@ -1,0 +1,38 @@
+body {
+    /*background-color: #1F2526;*/
+    background-color: #121616;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    justify-content: right;
+}
+
+nav ul li, a {
+    text-decoration: none;
+    list-style: none;
+    margin-right: 20px;
+}
+
+/* Headers */
+h1, h2, h3, p, span /*change this later */{
+    color: #f2f4f3;
+}
+
+/* Project Section */
+.project-section {
+    display: flex;
+    justify-content: center;
+}
+
+/* Targets each project */
+.project {
+    background-color: #1c2222;
+    margin: 20px 30px;
+}
+
+.project-images {
+    height: 150px;
+    width: auto;
+}
