@@ -11,16 +11,27 @@
     <header>
         <nav>
             <ul>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="">Resume</a></li>
                 <li><a href="contact.html">Contact</a></li>
              </ul>
         </nav>
     </header>
 
-    <h2>Hi, I'm Jessica</h2>
-    <h1>Web Developer</h1>
+    <main>
+        <section>
+             <h2>Hi, I'm Jessica</h2>
+              <h1>Web Developer</h1>
+        </section>
 
-    <main class="project-section">
+        <section>
+            <img src="images/Me-Icon-NB.png" height="250px" width="auto">
+        </section>
+    </main>
+
+    <!-- Project Section -->
+    <section class="project-section">
         <div class="project">
             <img src="images/react-movie-app.png" class="project-images" alt=""> 
             <h3>
@@ -28,7 +39,7 @@
             </h3>
             <p>Short descripion on hover</p>
             <span>technologies used</span>
-            <button class="button" id="openOne">View Description</button>
+            <button class="button" id="openOne">View</button>
         </div>
 
         <div class="project">
@@ -38,7 +49,7 @@
             </h3>
             <p>Short descripion on hover</p>
             <span>technologies used</span>
-            <button class="button" id="openTwo">View Description</button>
+            <button class="button" id="openTwo">View</button>
         </div>
 
         <div class="project">
@@ -48,32 +59,41 @@
                 </a>
             <p>Short descripion on hover</p>
             <span>technologies used</span>
-            <button class="button" id="openThree">View Description</button>
+            <button class="button" id="openThree">View</button>
         </div>
-    </main>
+    </section>
 
     <!-- Pop up modal containers -->
         <div class="modalContainerOne" id="modalContainerOne">
             <div class="modal">
+                <button class="modal-close-btn" id="closeOne">&times;</button>
                 <h2>React Project</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero suscipit, maiores repellendus amet ratione quae blanditiis reiciendis praesentium aperiam at quas debitis officiis in quibusdam alias, perspiciatis ad quaerat doloribus?</p>
-                <button id="closeOne">&times;</button>
+                
             </div>
         </div>
 
         <div class="modalContainerTwo" id="modalContainerTwo">
             <div class="modal">
-                <h2>Mayme's Bakery Project</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero suscipit, maiores repellendus amet ratione quae blanditiis reiciendis praesentium aperiam at quas debitis officiis in quibusdam alias, perspiciatis ad quaerat doloribus?</p>
-                <button id="closeTwo">&times;</button>
+                <div class="modal-content">
+                <button class="modal-close-btn" id="closeTwo">&times;</button>
+
+                <div class="video-container">
+                     <video src="images/maymes-bakery-preview.mp4" class="video-preview" height="400px" width="auto" controls></video>
+                </div>
+
+                 <h2>Mayme's Bakery Project</h2>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero suscipit, maiores repellendus amet ratione quae blanditiis reiciendis praesentium aperiam at quas debitis officiis in quibusdam alias, perspiciatis ad quaerat doloribus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero suscipit, maiores repellendus amet ratione quae blanditiis reiciendis praesentium aperiam at quas debitis officiis in quibusdam alias, perspiciatis ad quaerat doloribus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero suscipit, maiores repellendus amet ratione quae blanditiis reiciendis praesentium aperiam at quas debitis officiis in quibusdam alias, perspiciatis ad quaerat doloribus?</p>
+                </div>
             </div>
         </div>
 
         <div class="modalContainerThree" id="modalContainerThree">
             <div class="modal">
+                <button class="modal-close-btn" id="closeThree">&times;</button>
                 <h2>Third project</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero suscipit, maiores repellendus amet ratione quae blanditiis reiciendis praesentium aperiam at quas debitis officiis in quibusdam alias, perspiciatis ad quaerat doloribus?</p>
-                <button id="closeThree">&times;</button>
+                
             </div>
         </div>
 

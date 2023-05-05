@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body {
     /*background-color: #1F2526;*/
     background-color: #121616;
@@ -13,6 +18,13 @@ nav ul li, a {
     text-decoration: none;
     list-style: none;
     margin-right: 20px;
+}
+
+/* Main section */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Headers */
@@ -35,6 +47,11 @@ h1, h2, h3, p, span /*change this later */{
 .project-images {
     height: 150px;
     width: auto;
+}
+
+.project-section {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* Modals - maybe make one css rule instead of 3 */
@@ -86,12 +103,61 @@ h1, h2, h3, p, span /*change this later */{
     transition: opacity 0.3s ease;
 }
 
+/* Used in the function to open and close projects */
 .show {
     pointer-events: auto;
     opacity: 1;
 }
 
 .modal {
-    background-color: palevioletred;
-    width: 90%;
+    background-color: #1c2222;
+    width: 80%;
+    border-radius: 8px;
 }
+
+/*.modal-content {
+    position: fixed;
+    margin: 30px 30px;
+    padding: 20px 20px;
+    overflow-y: scroll;
+}*/
+
+/* Project Title in Modal */
+.modal-header {
+    display: flex;
+}
+
+/* Modal close 'x' button */
+.modal-close-btn {
+    float: right;
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    color: #f2f4f3;
+}
+
+.modal-close-btn:focus, .modal-close-btn:hover {
+    color: red;
+}
+
+/* The video preview shown when you open the modal */
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+video {
+    border-radius: 8px;
+}
+
+h2 {
+    color: #f2f4f3;
+    text-align: center;
+}
+
+button {
+    display: block;
+    cursor: pointer;
+}
+
